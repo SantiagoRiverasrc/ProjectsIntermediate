@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LectorManga</title>
+    <link rel="shortcut icon" href="./img/icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header_element">
+        <div class="div_main">
+            <div class="main_logo">
+                <img src="./img/logo-removebg-preview (1).png" class="logo" width="300px">
+            </div>
+            <div class="main_car">
+                <ul>
+                    <li class="submain">
+                        <span class="count_mangas"></span>
+                        <img src="./img/car.svg" alt="car logo">
+                        <div class="main_table">
+                            <table id="car_list">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Count</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="showMangas"></tbody>
+                                <a href="#" id="vaciar-carrito">Emptying car</a>
+                            </table>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main_mangas">
+        <div class="head">
+            <div class="carousel-container">
+                <img src="./img/N1.png" alt="Imagen 1" class="carousel-image">
+                <img src="./img/N2.jpg" alt="Imagen 2" class="carousel-image">
+                <img src="./img/N3.jpg" alt="Imagen 3" class="carousel-image">
+            </div>
+            <button id="prevBtn" class="btnCarrousel">Anterior</button>
+            <button id="nextBtn" class="btnCarrousel">Siguiente</button>
+        </div>
+
+        <h1 style="text-align: center; color:white">The best mangas of all times</h1>
+
+        <section class="section_mangas">
+            <div class="manga">
+                <img src="./img/M1.jpg" alt="Naruto" class="img_manga">
+                <h2>Naruto</h2>
+                <p>Price:<strong>$60</strong></p>
+                <button class="add_car" data-id="1">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M2.jpg" alt="Chainsaw man" class="img_manga">
+                <h2>Chainsaw Man</h2>
+                <p>Price:<strong>$180</strong></p>
+                <button class="add_car" data-id="2">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M3.jpg" alt="Jujutsu Kaisen" class="img_manga">
+                <h2>Jujutsu Kaisen</h2>
+                <p>Price:<strong>$165</strong></p>
+                <button class="add_car" data-id="3">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M4.jpg" alt="Tokyo Metropolitian" class="img_manga">
+                <h2>Tokyo Metropolitian</h2>
+                <p>Price:<strong>$40</strong></p>
+                <button class="add_car" data-id="4">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M5.jpg" alt="Stein S" class="img_manga">
+                <h2>Stein S</h2>
+                <p>Price:<strong>$120</strong></p>
+                <button class="add_car" data-id="5">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M6.jpg" alt="Berserk" class="img_manga">
+                <h2>Berserk</h2>
+                <p>Price:<strong>$100</strong></p>
+                <button class="add_car" data-id="6">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M7.jpg" alt="Monster" class="img_manga">
+                <h2>Monster</h2>
+                <p>Price:<strong>$90</strong></p>
+                <button class="add_car" data-id="7">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M8.jpg" alt="Billy Bat" class="img_manga">
+                <h2>Billy Bat</h2>
+                <p>Price:<strong>$30</strong></p>
+                <button class="add_car" data-id="8">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M9.jpg" alt="FullMetal Alchemist" class="img_manga">
+                <h2>Fullmetal Alchemist</h2>
+                <p>Price:<strong>$115</strong></p>
+                <button class="add_car" data-id="9">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M10.jpg" alt="Solo Leveling" class="img_manga">
+                <h2>Solo Leveling</h2>
+                <p>Price:<strong>$105</strong></p>
+                <button class="add_car" data-id="10">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M11.jpg" alt="Kagurabachi" class="img_manga">
+                <h2>Kagurabachi</h2>
+                <p>Price:<strong>$230</strong></p>
+                <button class="add_car" data-id="11">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M12.jpg" alt="My Hero Academia" class="img_manga">
+                <h2>My Hero Academia</h2>
+                <p>Price:<strong>$30</strong></p>
+                <button class="add_car"data-id="12">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M13.jpg" alt="Vinland Saga" class="img_manga">
+                <h2>Vinland Saga</h2>
+                <p>Price:<strong>$30</strong></p>
+                <button class="add_car" data-id="13">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M14.jpg" alt="Bleach" class="img_manga">
+                <h2>Bleach</h2>
+                <p>Price:<strong>$40</strong></p>
+                <button class="add_car" data-id="14">Comprar</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M15.jpg" alt="One Punch Man" class="img_manga">
+                <h2>One Punch </h2>
+                <p>Price:<strong>$20</strong></p>
+                <button class="add_car" data-id="15">Buy</button>
+            </div>
+            <div class="manga">
+                <img src="./img/M16.jpg" alt="Oshi No Ko" class="img_manga">
+                <h2>Oshi No Ko</h2> 
+                <p>Price:<strong>$120</strong></p>
+                <button class="add_car" data-id="16">Buy</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./js/app1.js"></script>
+</html> 
