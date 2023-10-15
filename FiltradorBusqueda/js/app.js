@@ -80,8 +80,9 @@ function createHtml(moviesActually){
             cardDiv.innerHTML =
             `
                 <h3>${item.nombre}</h3>
-                <h4>Genero: ${item.genero}</h4>
-                <h4>Año: ${item.año}</h4>
+                <h4>Genre: ${item.genero}</h4>
+                <h4>Year: ${item.año}</h4>
+                <img src="${item.src}" alt="${item.nombre}">
             `
     
     
