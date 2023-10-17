@@ -1,0 +1,64 @@
+
+
+
+.big_father{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.container_logic{
+    padding: 10px;
+    max-width: 1250px;
+    min-width: 1000px;
+    border-radius: 5px;
+    background-color:blueviolet ;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form_twitter h1{
+    font-size: 2rem;
+}
+
+
+
+
+
+#inp_twitter{
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#btn_send{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    background-color: rgba(4, 205, 255, 0.971);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn_send:hover{
+    background-color:rgba(16, 182, 223, 0.971);
+}
+
+
+
+.list_tweets h2{
+    font-size: 2.5rem;
+}
+
+.li_tweet{
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.li_tweet:hover{
+    color: #ffffff;
+}
