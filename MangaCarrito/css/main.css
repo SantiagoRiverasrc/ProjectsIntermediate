@@ -37,7 +37,7 @@ body{
     right: 0;
     top: 80%;
     z-index: 1;
-    background-color: bisque;
+    background: radial-gradient(circle, rgba(51,204,226,1) 9%, rgba(24,125,149,1) 42%, rgba(9,122,255,1) 100%);
     padding: 20px;
     min-height: 400px;
     min-width: 300px;

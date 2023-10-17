@@ -101,12 +101,17 @@ function createHtml(){
             countManga.innerHTML = carListShop.length;
         }
         
-    })
+    });
+
+    baseLocal();
     
 }
 
 
 
+function baseLocal(){
+    localStorage.setItem('car', JSON.stringify(carListShop));
+}
 
 
 //Delete a only manga
@@ -123,6 +128,12 @@ tableMangas.addEventListener('click', (e)=> {
     }
 })
 
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    carListShop = JSON.parse(localStorage.getItem('car')) || [];
+
+    createHtml();
+})
 
 
 //Delete all mangas of car
