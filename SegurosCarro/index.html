@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car insurance</title>
+</head>
+<body>
+    <section class="container_insurance">
+        <h2>Buy Your Car Insurance</h2>
+        <div class="div_insurance">
+            <form  class="form_insurance">
+                <label for="models">MODEL: </label>
+                <select name="model" id="models" required></select>
+                <br>
+                <label for="yearsCar">YEAR: </label>
+                <select name="years" id="yearsCar" required></select>
+
+                <h2>Type Insurance</h2>
+                <div class="container_radio">
+                        <input type="radio" id="types" name="contact" value="Basic" required/>
+                        <label for="basic">Basic</label>
+            
+                        <input type="radio" id="types" name="contact" value="Complete"/>
+                        <label for="complete">Complete</label>
+                </div>
+
+                <div class="info_insurance">
+                </div>
+
+                <button type="submit">Buy Insurance</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="./appInsurance.js"></script>
+</html>
