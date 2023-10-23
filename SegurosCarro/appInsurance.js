@@ -56,7 +56,7 @@ InsuranceBuy.prototype.Show = function(){
         // h3.classList.add('success')
         // h3.textContent = "Success!!"
         // form.appendChild(h3);
-    },3000)
+    },2500)
 
 
     

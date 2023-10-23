@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     background: radial-gradient(circle, rgba(28,0,84,1) 0%, rgba(61,0,83,1) 11%, rgba(192,5,39,1) 56%, rgba(194,5,36,1) 80%, rgba(215,8,8,1) 100%);
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -36,7 +39,8 @@ button[type="submit"]{
 }
 
 label{
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-right: 3px;
 }
 
 
