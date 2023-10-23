@@ -3,6 +3,7 @@ const yearsOfCars = document.querySelector('#yearsCar');
 const radios = document.querySelectorAll('#types')
 const form = document.querySelector('.form_insurance');
 const infoCertificate = document.querySelector('.info_insurance');
+const spinner = document.getElementById('spinner');
 
 let valueModel;
 let valueYear;
@@ -29,17 +30,42 @@ InsuranceBuy.prototype.Show = function(){
     
     valor = parseInt(valor);
 
-    console.log(valor);
+    
+    infoCertificate.innerHTML = 
+    `
+    <h4>Model: ${this.model}</h4>
+    <h4>Year: ${this.year}</h4>
+    <h4>Plan: ${this.plan} </h4>
+    <h4>Price: ${valor}</h4>
+    `
 
-    // infoCertificate.innerHTML = 
-    // `
-    // <h2>Model: ${this.model}</h2>
-    // <h2>Year: ${this.year}</h2>
-    // <h2>Price: ${}
+    spinner.style.display = "block";
+    infoCertificate.style.display = "none"
+
+    setTimeout(() => {
+        spinner.style.display = "none";
+
+        infoCertificate.style.display = "block";
+        infoCertificate.style.padding = "10px";
+        infoCertificate.style.width = "20%";
+        infoCertificate.style.margin = "0 auto";
+        infoCertificate.style.border = "1px solid black"
+
+
+        // const h3 = document.createElement('h3')
+        // h3.classList.add('success')
+        // h3.textContent = "Success!!"
+        // form.appendChild(h3);
+    },3000)
+
+
+    
+    
+
+ 
     
     
     
-    // `
 }
 
 
@@ -101,6 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
         const car = new InsuranceBuy(valueModel, parseInt(valueYear), valueType)
+
+
         car.Show();
     })
 

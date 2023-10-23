@@ -1,0 +1,100 @@
+body{
+    background: radial-gradient(circle, rgba(28,0,84,1) 0%, rgba(61,0,83,1) 11%, rgba(192,5,39,1) 56%, rgba(194,5,36,1) 80%, rgba(215,8,8,1) 100%);
+}
+
+
+.container_insurance{
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.div_insurance{
+    padding: 10px;
+}
+
+.title_container{
+    padding: 5px;
+    background-color: #41EAD4;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.container_radio{
+    background-color: #41EAD4;
+    padding: 10px;
+}
+
+button[type="submit"]{
+    margin:  20px;
+    padding: 10px;
+    background-color: #41EAD4;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+label{
+    margin-left: 10px;
+}
+
+
+select {
+    /* Estilos para el elemento select */
+    width: 300px; /* Ancho del select */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin: 0 10px;
+}
+
+option {
+    /* Estilos para los elementos option */
+    font-weight: bold; /* Ajustar el peso de la fuente */
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+.container_radio{
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+input[type="radio"]{
+    margin: 10px 0px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 10px auto;
+    display: none; /* Inicialmente oculto */
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.success{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 151, 0);
+    color: white;
+}
+
+.info_insurance{
+    background-color: #41EAD4;
+}
